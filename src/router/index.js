@@ -4,7 +4,12 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
   const routes = [
- 
+    {
+      path: '/',
+      redirect: '/recommend',
+      name: 'recommend',
+      component: () => import('@/components/recommend/recommend')
+    }
   ]
 
 const router = new VueRouter({
