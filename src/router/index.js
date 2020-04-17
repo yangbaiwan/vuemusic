@@ -9,6 +9,7 @@ Vue.use(VueRouter)
       redirect: '/recommend',
       name: 'recommend',
       component: () => import('@/components/recommend/recommend')
+      
     }
   ]
 
